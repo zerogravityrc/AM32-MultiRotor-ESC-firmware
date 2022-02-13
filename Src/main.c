@@ -51,7 +51,7 @@
  *
  * 1.61
  * -- moved duty cycle calculation to 10khz and added max change option.
- * -- decreased maximum interval change to 25%
+ * -- decreased maximum interval change to 35%
  * -- reduce wait time on fast acceleration (fast_accel)
  * -- added check in interrupt for early zero cross
  *
@@ -141,8 +141,8 @@ char dir_reversed = 0;
 char comp_pwm = 1;
 char VARIABLE_PWM = 1;
 char bi_direction = 0;
-char stuck_rotor_protection = 1;	// Turn off for Crawlers
-char brake_on_stop = 0;
+char stuck_rotor_protection = 0;	// Turn off for Crawlers
+char brake_on_stop = 1;
 char stall_protection = 0;
 char use_sin_start = 0;
 char THIRTY_TWO_MS_TLM = 0;
